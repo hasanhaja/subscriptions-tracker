@@ -1,0 +1,13 @@
+---
+layout: layouts/base.webc
+---
+
+<h1 class="sr-only">SubZero Home Page</h1>
+<section>
+  <h2>Device details</h2>
+  <p>User agent: <span data-user-agent></span></p>
+  <p>Is touchscreen or mobile device? <span data-touch-device></span></p>
+  <p>Platform: <span data-platform></span></p>
+  <p>CPU: <span data-cpu></span></p>
+  <p>Rendering engine: <span data-rendering-engine></span></p>
+</section>
