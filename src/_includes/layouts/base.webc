@@ -16,7 +16,6 @@
     <script type="module" src="/main.js" webc:keep></script>
     <script type="module" :src="getBundleFileUrl('js', 'defer')"></script>
   </head>
-  <body>
-    <main @html="this.content"></main>
+  <body @html="this.content">
   </body>
 </html>
