@@ -17,20 +17,50 @@ layout: layouts/base.webc
     <p>£154.35</p>
   </section>
   <section>
+    <button type="button">New</button>
     <table>
-      <tr>
-        <th>Subscription</th>
-        <th>Price</th>
-      </tr>
-      <tr>
-        <th>ExpressVPN</th>
-        <th>£86.24 per year</th>
-      </tr>
-      <tr>
-        <th>Netflix</th>
-        <th>£10.99 per month</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Subscription</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>ExpressVPN</th>
+          <th>£86.24 per year</th>
+        </tr>
+        <tr>
+          <th>Netflix</th>
+          <th>£10.99 per month</th>
+        </tr>
+      </tbody>
     </table>
+    <dialog open>
+      <form method="post">
+        <label>
+          <span>Service</span>
+          <select>
+            <optgroup label="Video streaming">
+              <option>Netflix</option>
+              <option>Disney</option>
+              <option>NowTV</option>
+            </optgroup>
+            <optgroup label="Shopping">
+              <option>ASOS</option>
+              <option>Amazon Prime</option>
+            </optgroup>
+            <optgroup label="Reading">
+              <option>Audible</option>
+              <option>LibroFM</option>
+              <option>Kindle Unlimited</option>
+              <option>Shortform</option>
+            </optgroup>
+          </select>
+        </label>
+        <button>Save</button>
+      </form>
+    </dialog>
   </section>
 </main>
 

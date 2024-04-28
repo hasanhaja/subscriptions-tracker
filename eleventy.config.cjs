@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     "./public/manifest.json": "assets/manifest.json",
+    "./public/.nojekyll": "/.nojekyll",
     "./public/android/": "assets/android/",
     "./public/ios/": "assets/ios/",
     "./public/windows11/": "assets/windows11/",
